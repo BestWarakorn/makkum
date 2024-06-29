@@ -51,8 +51,8 @@ def make_move(pits, start_pit):
 
 
 def play_game():
+    n=7
     pits = initialize_board()#ทำงานบรรทัดที่3
-    
     current_player = 1#ให้ผู้เล่น1เริ่มก่อน
     
     while True:#ให้ทำงานบรรทัดที่ 59-123 ไปเรื่อยๆ
