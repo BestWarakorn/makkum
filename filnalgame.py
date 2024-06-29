@@ -1,6 +1,6 @@
-def initialize_board(n):
+def initialize_board():
     #สร้างตารางหมากขุม
-    return [n] * 7 + [0] + [n] * 7 + [0]
+    return [7] * 7 + [0] + [7] * 7 + [0]
 
 
 def print_board(pits):
@@ -51,10 +51,10 @@ def make_move(pits, start_pit):
 
 
 def play_game():
-    n = int(input("ระบุจำนวนลูกแก้วต่อหนึ่งหลุม: "))#ให้ผู้เล่นระบุว่าอยากได้ลูกแก้วกี่ลูกต่อหลุม
-    pits = initialize_board(n)#ทำงานบรรทัดที่3
+    pits = initialize_board()#ทำงานบรรทัดที่3
+    
     current_player = 1#ให้ผู้เล่น1เริ่มก่อน
-
+    
     while True:#ให้ทำงานบรรทัดที่ 59-123 ไปเรื่อยๆ
         print_board(pits)#ทำงานบรรทัดที่8-11
         if pits[7] + pits[15] == n * 14:#ตรวจสอบว่าเกิดการชนะหรือไม่
